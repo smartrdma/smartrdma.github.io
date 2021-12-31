@@ -1,86 +1,97 @@
-.recentNews {
-    background-color: rgb(20, 117, 175)  
+body{margin-top:20px;}
+
+.section {
+    padding: 100px 0;
+    position: relative;
 }
-.recentNews .news-title {
-    text-align:center;
-    padding-top:30px;
-    padding-bottom:30px;
-    font-family: 'nimbus-sans-condensed', sans-serif;
-    font-size:55px;
-    font-weight:bold;
-    color: #fff;
+.gray-bg {
+    background-color: #ebf4fa;
 }
-.recentNews .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
+/* Blog 
+---------------------*/
+.blog-grid {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.recentNews .ct-blog {
-    margin-bottom: 30px;
+.blog-grid .blog-img {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
-.ct-blog .inner {
-    background-color: #FFF;
-    padding: 10px;
-    transition: all 0.2s ease-in-out 0s;
-    cursor: pointer;
-    height: auto;
+.blog-grid .blog-img .date {
+  position: absolute;
+  background: #3a3973;
+  color: #ffffff;
+  padding: 8px 15px;
+  left: 0;
+  top: 10px;
+  font-size: 14px;
 }
-.ct-blog .inner:hover {
-    background-color: #e6e6e6;
+.blog-grid .blog-info {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 20px;
+  margin: -30px 20px 0;
+  position: relative;
 }
-.ct-blog .fauxcrop {
-    height: 180px;
-    overflow: hidden;
+.blog-grid .blog-info h5 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 10px;
 }
-.ct-blog .fauxcrop img {
-    width: 100%;
+.blog-grid .blog-info h5 a {
+  color: #3a3973;
 }
-.ct-blog-content {
-    display: table;
-    padding: 30px 0 28px;
+.blog-grid .blog-info p {
+  margin: 0;
 }
-.ct-blog-content .ct-blog-date {
-    border-right: 1px solid #95A5A6;
-    display: table-cell;
-    font-family: "Lato", sans-serif;
-    padding: 0px 18px 0px 15px;
-    text-align: center;
+.blog-grid .blog-info .btn-bar {
+  margin-top: 20px;
 }
-.ct-blog-content .ct-blog-date span {
-    font-size: 16px;
-    color: rgb(20, 117, 175);  
-    font-weight: 700;
-    display: block;
-    line-height: 1;
+
+.px-btn-arrow {
+    padding: 0 50px 0 0;
+    line-height: 20px;
+    position: relative;
+    display: inline-block;
+    color: #fe4f6c;
+    -moz-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+    -webkit-transition: ease all 0.3s;
+    transition: ease all 0.3s;
 }
-.ct-blog-content .ct-blog-date strong {
-    font-size: 25px;
-    color: rgb(20, 117, 175);  
+
+
+.px-btn-arrow .arrow {
+    width: 13px;
+    height: 2px;
+    background: currentColor;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25px;
+    -moz-transition: ease right 0.3s;
+    -o-transition: ease right 0.3s;
+    -webkit-transition: ease right 0.3s;
+    transition: ease right 0.3s;
 }
-.ct-blog-content .ct-blog-header {
-    color: #000;
-    display: table-cell;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.2px;
-    line-height: 1.1;
-    padding: 0 20px;
-    vertical-align: top;
-}
-.btn-news {
-    color: #333;
-    font-size: 14px;
-    font-weight: bold;
-    padding-bottom: 30px;
-    text-align: center;
-}
-.btn-news.btn-contests a {
-    color: #fff;
-    font-family: 'nimbus-sans-condensed', sans-serif;
-    font-size: 24px;
-    transition: all 0.2s ease-in-out 0s;
-}
-.btn-news.btn-contests a:hover {
-    color: #000;
+
+.px-btn-arrow .arrow:after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    display: inline-block;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
